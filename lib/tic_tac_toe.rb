@@ -46,7 +46,7 @@ end
 # A complete turn
 def turn(board)
   token = current_player(board)
-  puts "Play #{token}, please enter 1-9:"
+  puts "Player #{token}, please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index) == false
